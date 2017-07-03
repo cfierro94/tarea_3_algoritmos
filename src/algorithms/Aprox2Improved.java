@@ -22,7 +22,7 @@ public class Aprox2Improved {
     public int getCVM(){
         int cDimension = 0;
         while (graph.hasNextVertex()){
-            Vertex v = graph.getNextVertex();
+            Vertex v = graph.getBiggestDegreeVertex();
             Vertex u = graph.getMaxDegreeNeighbor(v);
             cDimension += 2;
             graph.deleteVertex(v);

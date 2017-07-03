@@ -22,7 +22,7 @@ public class BiggestDegree {
     public int getCVM(){
         int cDimension = 0;
         while (graph.hasNextVertex()){
-            Vertex v = graph.getNextVertex();
+            Vertex v = graph.getBiggestDegreeVertex();
             cDimension++;
             graph.deleteVertex(v);
         }

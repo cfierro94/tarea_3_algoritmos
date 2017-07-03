@@ -29,7 +29,7 @@ public class OrderedGraph{
         map.get(v).addEdge(u);
     }
 
-    public Vertex getNextVertex() {
+    public Vertex getBiggestDegreeVertex() {
         return graph.first();
     }
 
