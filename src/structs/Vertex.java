@@ -27,7 +27,7 @@ public class Vertex implements Comparable<Vertex>{
         countNeighbors = 0;
     }
 
-    Iterator<Integer> getNeighbors(){
+    public Iterator<Integer> getNeighbors(){
         return neighbors.iterator();
     }
 
@@ -35,10 +35,10 @@ public class Vertex implements Comparable<Vertex>{
      *
      * @return Number of neighbors of the vertex
      */
-    int getCountNeighbors(){
+    public int getCountNeighbors(){
         return countNeighbors;
     }
-    int getId() {
+    public int getId() {
         return id;
     }
 

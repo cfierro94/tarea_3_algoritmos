@@ -1,29 +1,30 @@
 package structs;
 
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Iterator;
 
 /**
  * Graph that allows to iterate over its edges
  */
 public class SequentialGraph {
-    private HashSet<Vertex> graph;
+    private HashMap<Integer, Vertex> graph;
     private int m, n;
     private int countDeletedEdges;
 
     public SequentialGraph(int n) {
         this.n = n;
-        graph = new HashSet<>(n+1);
+        graph = new HashMap<>(n+1);
         for (int i = 1; i < n+1; i++) {
-            graph.add(new Vertex(i));
+            graph.put(i, new Vertex(i));
         }
         countDeletedEdges = 0;
         m = 0;
     }
 
     public void addEdge(int u, int v) {
-        graph..addEdge(v);
-        graph[v].addEdge(u);
+        graph.get(u).addEdge(v);
+        graph.get(v).addEdge(u);
         m++;
     }
 
@@ -32,9 +33,16 @@ public class SequentialGraph {
      * @return Edge represented with a two vertices list
      */
     public Vertex[] getNextEdge() {
-        for (int i = 1; i < n+1; i++) {
-            if (graph[i].getCountNeighbors() > 0)
-                return new Vertex[]{graph[i], graph[graph[i].getNeighbors().next()]};
+        ArrayList<Integer> toDelete = new ArrayList<>();
+        for (HashMap.Entry<Integer, Vertex> pair : graph.entrySet()) {
+            Vertex v = pair.getValue();
+            if (v.getCountNeighbors() > 0)
+                return new Vertex[]{v, graph.get(v.getNeighbors().next())};
+            else
+                toDelete.add(pair.getKey()); // If vertex is disconnected, append it for deletion
+        }
+        for (Integer key : toDelete){
+            graph.remove(key);
         }
         return null;
     }
@@ -53,13 +61,14 @@ public class SequentialGraph {
     }
 
     private int deleteEdgesVertex(int u) {
-        Iterator<Integer> iterator = graph[u].getNeighbors();
+        Iterator<Integer> iterator = graph.get(u).getNeighbors();
         while (iterator.hasNext()){
             int next = iterator.next();
-            graph[next].deleteEdge(u);
+            graph.get(next).deleteEdge(u);
         }
-        int total = graph[u].getCountNeighbors();
-        graph[u].deleteAllEdges();
+        int total = graph.get(u).getCountNeighbors();
+        graph.get(u).deleteAllEdges();
+        graph.remove(u); // node is disconnected so isn't needed anymore
         return total;
     }
 }
