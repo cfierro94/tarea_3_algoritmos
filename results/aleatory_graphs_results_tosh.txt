@@ -1,0 +1,183 @@
+p: 1.0E-5
+n: 32
+mgrade: 0 in 0 [ms]; twoaprox: 0 in 0 [ms]; twoaproximp: 0 in 0 [ms]; 
+
+n: 64
+mgrade: 0 in 0 [ms]; twoaprox: 0 in 0 [ms]; twoaproximp: 0 in 0 [ms]; 
+
+n: 128
+mgrade: 0 in 0 [ms]; twoaprox: 0 in 0 [ms]; twoaproximp: 0 in 0 [ms]; 
+
+n: 256
+mgrade: 1 in 0 [ms]; twoaprox: 2 in 0 [ms]; twoaproximp: 2 in 0 [ms]; 
+
+n: 512
+mgrade: 3 in 0 [ms]; twoaprox: 6 in 0 [ms]; twoaproximp: 6 in 0 [ms]; 
+
+n: 1024
+mgrade: 4 in 0 [ms]; twoaprox: 10 in 0 [ms]; twoaproximp: 10 in 0 [ms]; 
+
+n: 2048
+mgrade: 3 in 0 [ms]; twoaprox: 36 in 16 [ms]; twoaproximp: 6 in 0 [ms]; 
+
+n: 4096
+mgrade: 4 in 0 [ms]; twoaprox: 168 in 31 [ms]; twoaproximp: 136 in 0 [ms]; 
+
+n: 8192
+mgrade: 39 in 0 [ms]; twoaprox: 586 in 31 [ms]; twoaproximp: 84 in 0 [ms]; 
+
+n: 16384
+mgrade: 67 in 0 [ms]; twoaprox: 2318 in 94 [ms]; twoaproximp: 128 in 0 [ms]; 
+
+n: 32768
+mgrade: 155 in 0 [ms]; twoaprox: 8326 in 781 [ms]; twoaproximp: 1242 in 16 [ms]; 
+
+n: 65536
+mgrade: 1999 in 16 [ms]; twoaprox: 26638 in 4797 [ms]; twoaproximp: 3938 in 15 [ms]; 
+
+
+p: 1.0E-4
+n: 32
+mgrade: 0 in 0 [ms]; twoaprox: 0 in 0 [ms]; twoaproximp: 0 in 0 [ms]; 
+
+n: 64
+mgrade: 0 in 0 [ms]; twoaprox: 0 in 0 [ms]; twoaproximp: 0 in 0 [ms]; 
+
+n: 128
+mgrade: 0 in 0 [ms]; twoaprox: 0 in 0 [ms]; twoaproximp: 0 in 0 [ms]; 
+
+n: 256
+mgrade: 3 in 0 [ms]; twoaprox: 6 in 0 [ms]; twoaproximp: 6 in 0 [ms]; 
+
+n: 512
+mgrade: 5 in 0 [ms]; twoaprox: 24 in 0 [ms]; twoaproximp: 24 in 0 [ms]; 
+
+n: 1024
+mgrade: 7 in 0 [ms]; twoaprox: 100 in 0 [ms]; twoaproximp: 14 in 0 [ms]; 
+
+n: 2048
+mgrade: 37 in 0 [ms]; twoaprox: 382 in 0 [ms]; twoaproximp: 68 in 0 [ms]; 
+
+n: 4096
+mgrade: 111 in 0 [ms]; twoaprox: 1192 in 15 [ms]; twoaproximp: 162 in 0 [ms]; 
+
+n: 8192
+mgrade: 396 in 0 [ms]; twoaprox: 3770 in 47 [ms]; twoaproximp: 624 in 0 [ms]; 
+
+n: 16384
+mgrade: 1395 in 0 [ms]; twoaprox: 10444 in 125 [ms]; twoaproximp: 1818 in 0 [ms]; 
+
+n: 32768
+mgrade: 3742 in 15 [ms]; twoaprox: 25926 in 328 [ms]; twoaproximp: 5298 in 0 [ms]; 
+
+n: 65536
+mgrade: 17914 in 78 [ms]; twoaprox: 58702 in 1062 [ms]; twoaproximp: 15086 in 47 [ms]; 
+
+
+p: 0.001
+n: 32
+mgrade: 0 in 0 [ms]; twoaprox: 0 in 0 [ms]; twoaproximp: 0 in 0 [ms]; 
+
+n: 64
+mgrade: 1 in 0 [ms]; twoaprox: 2 in 0 [ms]; twoaproximp: 2 in 0 [ms]; 
+
+n: 128
+mgrade: 3 in 0 [ms]; twoaprox: 10 in 0 [ms]; twoaproximp: 10 in 0 [ms]; 
+
+n: 256
+mgrade: 9 in 0 [ms]; twoaprox: 50 in 0 [ms]; twoaproximp: 30 in 0 [ms]; 
+
+n: 512
+mgrade: 26 in 0 [ms]; twoaprox: 158 in 0 [ms]; twoaproximp: 50 in 0 [ms]; 
+
+n: 1024
+mgrade: 71 in 0 [ms]; twoaprox: 526 in 0 [ms]; twoaproximp: 168 in 0 [ms]; 
+
+n: 2048
+mgrade: 186 in 0 [ms]; twoaprox: 1392 in 0 [ms]; twoaproximp: 278 in 0 [ms]; 
+
+n: 4096
+mgrade: 1013 in 0 [ms]; twoaprox: 3424 in 16 [ms]; twoaproximp: 984 in 15 [ms]; 
+
+n: 8192
+mgrade: 2866 in 16 [ms]; twoaprox: 7472 in 16 [ms]; twoaproximp: 2722 in 0 [ms]; 
+
+n: 16384
+mgrade: 8006 in 32 [ms]; twoaprox: 15708 in 109 [ms]; twoaproximp: 9846 in 47 [ms]; 
+
+n: 32768
+mgrade: 23879 in 235 [ms]; twoaprox: 32066 in 516 [ms]; twoaproximp: 24400 in 219 [ms]; 
+
+n: 65536
+mgrade: 55661 in 1187 [ms]; twoaprox: 64850 in 2204 [ms]; twoaproximp: 52462 in 985 [ms]; 
+
+
+p: 0.01
+n: 32
+mgrade: 2 in 0 [ms]; twoaprox: 4 in 0 [ms]; twoaproximp: 4 in 0 [ms]; 
+
+n: 64
+mgrade: 5 in 0 [ms]; twoaprox: 24 in 0 [ms]; twoaproximp: 10 in 0 [ms]; 
+
+n: 128
+mgrade: 14 in 0 [ms]; twoaprox: 70 in 0 [ms]; twoaproximp: 18 in 0 [ms]; 
+
+n: 256
+mgrade: 37 in 0 [ms]; twoaprox: 182 in 0 [ms]; twoaproximp: 64 in 0 [ms]; 
+
+n: 512
+mgrade: 237 in 0 [ms]; twoaprox: 444 in 0 [ms]; twoaproximp: 230 in 0 [ms]; 
+
+n: 1024
+mgrade: 310 in 0 [ms]; twoaprox: 960 in 0 [ms]; twoaproximp: 388 in 0 [ms]; 
+
+n: 2048
+mgrade: 1484 in 0 [ms]; twoaprox: 1978 in 0 [ms]; twoaproximp: 1378 in 16 [ms]; 
+
+n: 4096
+mgrade: 3442 in 32 [ms]; twoaprox: 4026 in 16 [ms]; twoaproximp: 3522 in 32 [ms]; 
+
+n: 8192
+mgrade: 7333 in 94 [ms]; twoaprox: 8132 in 125 [ms]; twoaproximp: 7322 in 93 [ms]; 
+
+n: 16384
+mgrade: 15815 in 604 [ms]; twoaprox: 16318 in 594 [ms]; twoaproximp: 15170 in 484 [ms]; 
+
+n: 32768
+mgrade: 32193 in 3563 [ms]; twoaprox: 32690 in 5579 [ms]; twoaproximp: 31840 in 2703 [ms]; 
+
+n: 65536
+mgrade: 64612 in 15200 [ms]; twoaprox: 65458 in 16758 [ms]; twoaproximp: 64684 in 13738 [ms]; 
+
+
+p: 0.1
+n: 32
+mgrade: 12 in 0 [ms]; twoaprox: 26 in 0 [ms]; twoaproximp: 18 in 0 [ms]; 
+
+n: 64
+mgrade: 33 in 0 [ms]; twoaprox: 54 in 0 [ms]; twoaproximp: 48 in 0 [ms]; 
+
+n: 128
+mgrade: 90 in 0 [ms]; twoaprox: 120 in 0 [ms]; twoaproximp: 90 in 0 [ms]; 
+
+n: 256
+mgrade: 215 in 0 [ms]; twoaprox: 248 in 0 [ms]; twoaproximp: 232 in 0 [ms]; 
+
+n: 512
+mgrade: 446 in 16 [ms]; twoaprox: 510 in 0 [ms]; twoaproximp: 480 in 0 [ms]; 
+
+n: 1024
+mgrade: 979 in 16 [ms]; twoaprox: 1020 in 16 [ms]; twoaproximp: 968 in 0 [ms]; 
+
+n: 2048
+mgrade: 2021 in 47 [ms]; twoaprox: 2044 in 63 [ms]; twoaproximp: 1980 in 47 [ms]; 
+
+n: 4096
+mgrade: 4062 in 235 [ms]; twoaprox: 4092 in 234 [ms]; twoaproximp: 3982 in 250 [ms]; 
+
+n: 8192
+mgrade: 8168 in 1657 [ms]; twoaprox: 8186 in 1453 [ms]; twoaproximp: 8128 in 1484 [ms]; 
+
+n: 16384
+mgrade: 16371 in 7307 [ms]; twoaprox: 16380 in 7391 [ms]; twoaproximp: 16340 in 7204 [ms]; 
+
