@@ -7,7 +7,7 @@ import structs.Vertex;
 import java.util.ArrayList;
 
 
-public class Aprox2 {
+public class Aprox2 implements CVMAlgorithm{
     SequentialGraph graph;
 
     public Aprox2(int n, ArrayList<Pair> edges) {

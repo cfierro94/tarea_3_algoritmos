@@ -7,7 +7,7 @@ import structs.Vertex;
 import java.util.ArrayList;
 
 
-public class BiggestDegree {
+public class BiggestDegree implements CVMAlgorithm{
     private OrderedGraph graph;
 
     public BiggestDegree(int n, ArrayList<Pair> edges) {

@@ -7,7 +7,7 @@ import structs.Vertex;
 import java.util.ArrayList;
 
 
-public class Aprox2Improved {
+public class Aprox2Improved implements CVMAlgorithm {
     private OrderedGraph graph;
 
     public Aprox2Improved(int n, ArrayList<Pair> edges) {

@@ -3,6 +3,7 @@ package tests;
 import algorithms.Aprox2;
 import algorithms.Aprox2Improved;
 import algorithms.BiggestDegree;
+import algorithms.CVMAlgorithm;
 import structs.Graph;
 import structs.OrderedGraph;
 import structs.Pair;
@@ -59,25 +60,27 @@ public class ComparationTest {
 
                 // Construction: Takes O(|V|log(|V|)) time.
                 ArrayList<Pair> edges = createEdgesByProbability(vertexNumber, prob);
-                BiggestDegree biggest_deg = new BiggestDegree(vertexNumber, edges);
-                Aprox2 two_aprox = new Aprox2(vertexNumber, edges);
-                Aprox2Improved better_2_aprox = new Aprox2Improved(vertexNumber, edges);
+                CVMAlgorithm tester = new BiggestDegree(vertexNumber, edges);
 
                 // Execution: Takes O(|V|*maxDegree) each one.
                 long execTimer0 = System.currentTimeMillis();
-                int res1 = biggest_deg.getCVM();
+                int res1 = tester.getCVM();
                 long execTimer1 = System.currentTimeMillis();
                 pw.print("biggest_deg: " + res1 + " in " + (execTimer1 - execTimer0) + " [ms]; ");
                 System.out.println("biggest_deg: " + res1 + " in " + (execTimer1 - execTimer0) + " [ms] ");
 
+                tester = new Aprox2(vertexNumber, edges);
+                System.gc();
                 execTimer0 = System.currentTimeMillis();
-                int res2 = two_aprox.getCVM();
+                int res2 = tester.getCVM();
                 execTimer1 = System.currentTimeMillis();
                 pw.print("2_aprox: " + res2 + " in " + (execTimer1 - execTimer0) + " [ms]; ");
                 System.out.println("2_aprox: " + res2 + " in " + (execTimer1 - execTimer0) + " [ms] ");
 
+                tester = new Aprox2Improved(vertexNumber, edges);
+                System.gc();
                 execTimer0 = System.currentTimeMillis();
-                int res3 = better_2_aprox.getCVM();
+                int res3 = tester.getCVM();
                 execTimer1 = System.currentTimeMillis();
                 pw.println("better_2_aprox: " + res3 + " in " + (execTimer1 - execTimer0) + " [ms]; ");
                 System.out.println("better_2_aprox: " + res3 + " in " + (execTimer1 - execTimer0) + " [ms] ");
