@@ -10,10 +10,10 @@ import java.util.ArrayList;
 public class BiggestDegree implements CVMAlgorithm{
     private OrderedGraph graph;
 
-    public BiggestDegree(int n, ArrayList<Pair> edges) {
+    public BiggestDegree(int n, int[] edges) {
         graph = new OrderedGraph(n);
-        for (Pair p: edges){
-            graph.addEdge(p.u, p.v);
+        for (int i = 0; i < edges.length;){
+            graph.addEdge(edges[i++],edges[i++]);
         }
         graph.makeTreeSet(); //full ordered-degree container struct.
     }

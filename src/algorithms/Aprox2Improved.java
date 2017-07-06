@@ -10,10 +10,10 @@ import java.util.ArrayList;
 public class Aprox2Improved implements CVMAlgorithm {
     private OrderedGraph graph;
 
-    public Aprox2Improved(int n, ArrayList<Pair> edges) {
+    public Aprox2Improved(int n, int[] edges) {
         graph = new OrderedGraph(n);
-        for (Pair p: edges){
-            graph.addEdge(p.u, p.v);
+        for (int i = 0; i < edges.length;){
+            graph.addEdge(edges[i++], edges[i++]);
         }
         graph.makeTreeSet();
     }

@@ -10,10 +10,10 @@ import java.util.ArrayList;
 public class Aprox2 implements CVMAlgorithm{
     SequentialGraph graph;
 
-    public Aprox2(int n, ArrayList<Pair> edges) {
+    public Aprox2(int n, int[] edges) {
         graph = new SequentialGraph(n);
-        for (Pair p: edges){
-            graph.addEdge(p.u, p.v);
+        for (int i = 0; i < edges.length;){
+            graph.addEdge(edges[i++],edges[i++]);
         }
     }
 
