@@ -25,7 +25,6 @@ public class ComparationTest {
      *
      * @param n |V| of graph.
      * @param prob Double between 0 and 1 representing probability of edge between
-     * @param graph Isntantited graph wich edges will be added.
      */
     static ArrayList<Pair> createEdgesByProbability(int n, double prob){
         ArrayList<Pair> edges = new ArrayList<>();
@@ -59,8 +58,14 @@ public class ComparationTest {
                 System.out.println("edge_prob: " + prob);
 
                 // Construction: Takes O(|V|log(|V|)) time.
+                long t0 = System.currentTimeMillis();
                 ArrayList<Pair> edges = createEdgesByProbability(vertexNumber, prob);
+                long t1 = System.currentTimeMillis();
+                System.out.println("Time creating edges by prob " + (t1-t0) + " {ms] ");
+
+                t0 = System.currentTimeMillis();
                 CVMAlgorithm tester = new BiggestDegree(vertexNumber, edges);
+                System.out.println("Time building BiggestDegree (ordered graph) " + (System.currentTimeMillis()-t0) + " [ms] ");
 
                 // Execution: Takes O(|V|*maxDegree) each one.
                 long execTimer0 = System.currentTimeMillis();
@@ -69,16 +74,20 @@ public class ComparationTest {
                 pw.print("biggest_deg: " + res1 + " in " + (execTimer1 - execTimer0) + " [ms]; ");
                 System.out.println("biggest_deg: " + res1 + " in " + (execTimer1 - execTimer0) + " [ms] ");
 
+                t0 = System.currentTimeMillis();
                 tester = new Aprox2(vertexNumber, edges);
                 System.gc();
+                System.out.println("Time building Aprox2 (sequential graph) " + (System.currentTimeMillis()-t0) + " [ms] ");
                 execTimer0 = System.currentTimeMillis();
                 int res2 = tester.getCVM();
                 execTimer1 = System.currentTimeMillis();
                 pw.print("2_aprox: " + res2 + " in " + (execTimer1 - execTimer0) + " [ms]; ");
                 System.out.println("2_aprox: " + res2 + " in " + (execTimer1 - execTimer0) + " [ms] ");
 
+                t0 = System.currentTimeMillis();
                 tester = new Aprox2Improved(vertexNumber, edges);
                 System.gc();
+                System.out.println("Time building Aprox2Improved (ordered graph) " + (System.currentTimeMillis()-t0) + " [ms] ");
                 execTimer0 = System.currentTimeMillis();
                 int res3 = tester.getCVM();
                 execTimer1 = System.currentTimeMillis();
