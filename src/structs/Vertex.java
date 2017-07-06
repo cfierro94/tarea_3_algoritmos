@@ -5,6 +5,7 @@ import java.util.Iterator;
 
 public class Vertex implements Comparable<Vertex>{
     private HashSet<Integer> neighbors;
+    private int maxDegree;
     private int countNeighbors;
     private int id;
 
@@ -13,15 +14,29 @@ public class Vertex implements Comparable<Vertex>{
         this.id = id;
         countNeighbors = 0;
     }
+
+    /**
+     * Cost: O(1)
+     * @param v
+     */
     void addEdge(int v){
         neighbors.add(v);
         countNeighbors++;
+        maxDegree = countNeighbors;
     }
+
+    /**
+     * Cost: O(1)
+     * @param v
+     */
     void deleteEdge(int v){
         neighbors.remove(v);
         countNeighbors--;
     }
 
+    /**
+     * Cost: O(Grade(thisVertex))
+     */
     void deleteAllEdges(){
         neighbors.clear();
         countNeighbors = 0;
@@ -44,7 +59,10 @@ public class Vertex implements Comparable<Vertex>{
 
     @Override
     public int compareTo(Vertex o) {
-        return Integer.compare(countNeighbors, o.getCountNeighbors());
+        if (this.maxDegree == o.maxDegree){
+            return Integer.compare(this.id, o.id);
+        }
+        return Integer.compare(maxDegree, o.maxDegree);
     }
 
     @Override

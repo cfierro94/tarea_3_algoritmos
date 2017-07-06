@@ -7,11 +7,15 @@ import java.util.Iterator;
 /**
  * Graph that allows to iterate over its edges
  */
-public class SequentialGraph {
+public class SequentialGraph implements Graph{
     private HashMap<Integer, Vertex> graph;
     private int m, n;
     private int countDeletedEdges;
 
+    /**
+     * Cost: O(n = |V|)
+     * @param n
+     */
     public SequentialGraph(int n) {
         this.n = n;
         graph = new HashMap<>(n+1);
@@ -22,6 +26,11 @@ public class SequentialGraph {
         m = 0;
     }
 
+    /**
+     * Cost: O(1)
+     * @param u
+     * @param v
+     */
     public void addEdge(int u, int v) {
         graph.get(u).addEdge(v);
         graph.get(v).addEdge(u);
@@ -30,6 +39,7 @@ public class SequentialGraph {
 
     /**
      * Searches for some edge in the graph
+     * Cost = O(1)
      * @return Edge represented with a two vertices list
      */
     public Vertex[] getNextEdge() {
@@ -48,27 +58,30 @@ public class SequentialGraph {
     }
 
     /**
-     *
+     * Cost: O(1)
      * @return True if there is at least one more edge in the graph
      */
     public boolean hasNextEdge() {
         return countDeletedEdges != m;
     }
 
-    public void deleteEdges(Vertex u, Vertex v) {
-        countDeletedEdges += deleteEdgesVertex(u.getId());
-        countDeletedEdges += deleteEdgesVertex(v.getId());
-    }
 
-    private int deleteEdgesVertex(int u) {
-        Iterator<Integer> iterator = graph.get(u).getNeighbors();
+    /**
+     * Cost: O(Grade(u))
+     *
+     * @param vertex
+     * @return
+     */
+    public void deleteVertexNEdges(Vertex vertex) {
+        countDeletedEdges += vertex.getCountNeighbors();
+        Iterator<Integer> iterator = vertex.getNeighbors();
         while (iterator.hasNext()){
             int next = iterator.next();
-            graph.get(next).deleteEdge(u);
+            graph.get(next).deleteEdge(vertex.getId());
+            if (graph.get(next).getCountNeighbors() <= 0) // if node is disconnected, isn't needed anymore
+                graph.remove(graph.get(next).getId());
         }
-        int total = graph.get(u).getCountNeighbors();
-        graph.get(u).deleteAllEdges();
-        graph.remove(u); // node is disconnected so isn't needed anymore
-        return total;
+        vertex.deleteAllEdges();
+        graph.remove(vertex.getId()); // node is disconnected so isn't needed anymore
     }
 }

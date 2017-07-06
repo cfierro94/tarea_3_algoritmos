@@ -6,25 +6,24 @@ import structs.Vertex;
 
 import java.util.ArrayList;
 
-/**
- * Created by constanzafierro on 24-06-17.
- */
-public class BiggestDegree {
-    OrderedGraph graph;
 
-    public BiggestDegree(ArrayList<Pair> edges) {
-        graph = new OrderedGraph();
+public class BiggestDegree {
+    private OrderedGraph graph;
+
+    public BiggestDegree(int n, ArrayList<Pair> edges) {
+        graph = new OrderedGraph(n);
         for (Pair p: edges){
             graph.addEdge(p.u, p.v);
         }
+        graph.makeTreeSet(); //full ordered-degree container struct.
     }
 
     public int getCVM(){
         int cDimension = 0;
-        while (graph.hasNextVertex()){
+        while (graph.hasNextEdge()){
             Vertex v = graph.getBiggestDegreeVertex();
             cDimension++;
-            graph.deleteVertex(v);
+            graph.deleteVertexNEdges(v);
         }
         return cDimension;
     }

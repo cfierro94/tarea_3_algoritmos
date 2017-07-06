@@ -36,7 +36,9 @@ public class SequentialGraphTest {
         asserto(minGrade == 1);
         asserto(maxGrade == n-1);
 
-        seqGraph.deleteEdges(pairOfVertex[0], pairOfVertex[1]); // this should delete all edges
+        seqGraph.deleteVertexNEdges(pairOfVertex[0]);
+        seqGraph.deleteVertexNEdges(pairOfVertex[1]);
+        // this should delete all edges
         asserto(!seqGraph.hasNextEdge());
         asserto(seqGraph.getNextEdge() == null);
     }
