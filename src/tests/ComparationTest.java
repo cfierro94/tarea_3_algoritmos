@@ -48,15 +48,15 @@ public class ComparationTest {
 
         double[] probabilities = {0.1, 0.15, 0.2, 0.25, 0.3};
 
-        for (double prob : probabilities){
-            long probTimer0 = System.currentTimeMillis();
-            pw.println("edge_prob: " + prob);
-            System.out.println("edge_prob: " + prob);
-            for (int i = 5; i <= 20; i++){
-                long iTimer0 = System.currentTimeMillis();
-                int vertexNumber = (int)Math.pow(2, i);
-                pw.println("vertex_number: " + vertexNumber);
-                System.out.println("vertex_number: " + vertexNumber);
+        for (int i = 5; i <= 20; i++){
+            long iTimer0 = System.currentTimeMillis();
+            int vertexNumber = (int)Math.pow(2, i);
+            pw.println("vertex_number: " + vertexNumber);
+            System.out.println("vertex_number: " + vertexNumber);
+            for (double prob : probabilities){
+                long probTimer0 = System.currentTimeMillis();
+                pw.println("edge_prob: " + prob);
+                System.out.println("edge_prob: " + prob);
 
                 // Construction: Takes O(|V|log(|V|)) time.
                 ArrayList<Pair> edges = createEdgesByProbability(vertexNumber, prob);
@@ -86,14 +86,14 @@ public class ComparationTest {
                 System.out.println("better_2_aprox: " + res3 + " in " + (execTimer1 - execTimer0) + " [ms] ");
 
 
-                long iTimer1 = System.currentTimeMillis();
-                System.out.println(" done |v|: " + vertexNumber + " in " + (iTimer1 - iTimer0) + " [ms] ");
+                long probTimer1 = System.currentTimeMillis();
+                System.out.println("  done prob: " + prob + " in " + (probTimer1 - probTimer0) + " [ms]");
                 System.out.println();
                 pw.println();
                 pw.flush();
           }
-            long probTimer1 = System.currentTimeMillis();
-            System.out.println("  done prob: " + prob + " in " + (probTimer1 - probTimer0) + " [ms]");
+            long iTimer1 = System.currentTimeMillis();
+            System.out.println(" done |v|: " + vertexNumber + " in " + (iTimer1 - iTimer0) + " [ms] ");
             System.out.println();
             pw.println();
         }
