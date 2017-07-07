@@ -1,0 +1,175 @@
+edge_prob: 0.01
+vertex_number: 32
+biggest_deg: 2 in 15 [ms]; 2_aprox: 4 in 0 [ms]; better_2_aprox: 4 in 0 [ms]; 
+
+vertex_number: 64
+biggest_deg: 9 in 0 [ms]; 2_aprox: 26 in 0 [ms]; better_2_aprox: 18 in 0 [ms]; 
+
+vertex_number: 128
+biggest_deg: 21 in 0 [ms]; 2_aprox: 74 in 0 [ms]; better_2_aprox: 40 in 0 [ms]; 
+
+vertex_number: 256
+biggest_deg: 32 in 0 [ms]; 2_aprox: 194 in 0 [ms]; better_2_aprox: 42 in 0 [ms]; 
+
+vertex_number: 512
+biggest_deg: 140 in 0 [ms]; 2_aprox: 444 in 0 [ms]; better_2_aprox: 184 in 0 [ms]; 
+
+vertex_number: 1024
+biggest_deg: 479 in 0 [ms]; 2_aprox: 968 in 16 [ms]; better_2_aprox: 498 in 0 [ms]; 
+
+vertex_number: 2048
+biggest_deg: 1392 in 0 [ms]; 2_aprox: 1972 in 31 [ms]; better_2_aprox: 1528 in 16 [ms]; 
+
+vertex_number: 4096
+biggest_deg: 3216 in 31 [ms]; 2_aprox: 4018 in 31 [ms]; better_2_aprox: 3414 in 31 [ms]; 
+
+vertex_number: 8192
+biggest_deg: 7597 in 110 [ms]; 2_aprox: 8132 in 125 [ms]; better_2_aprox: 7328 in 109 [ms]; 
+
+vertex_number: 16384
+biggest_deg: 15658 in 531 [ms]; 2_aprox: 16314 in 563 [ms]; better_2_aprox: 15312 in 532 [ms]; 
+
+vertex_number: 32768
+biggest_deg: 31731 in 2958 [ms]; 2_aprox: 32700 in 2735 [ms]; better_2_aprox: 31356 in 2556 [ms]; 
+
+
+edge_prob: 0.03
+vertex_number: 32
+biggest_deg: 6 in 0 [ms]; 2_aprox: 14 in 0 [ms]; better_2_aprox: 6 in 0 [ms]; 
+
+vertex_number: 64
+biggest_deg: 15 in 0 [ms]; 2_aprox: 44 in 0 [ms]; better_2_aprox: 20 in 0 [ms]; 
+
+vertex_number: 128
+biggest_deg: 47 in 0 [ms]; 2_aprox: 104 in 0 [ms]; better_2_aprox: 38 in 0 [ms]; 
+
+vertex_number: 256
+biggest_deg: 151 in 0 [ms]; 2_aprox: 232 in 0 [ms]; better_2_aprox: 166 in 0 [ms]; 
+
+vertex_number: 512
+biggest_deg: 371 in 0 [ms]; 2_aprox: 484 in 0 [ms]; better_2_aprox: 360 in 0 [ms]; 
+
+vertex_number: 1024
+biggest_deg: 720 in 0 [ms]; 2_aprox: 1000 in 0 [ms]; better_2_aprox: 830 in 15 [ms]; 
+
+vertex_number: 2048
+biggest_deg: 1897 in 16 [ms]; 2_aprox: 2030 in 16 [ms]; better_2_aprox: 1740 in 15 [ms]; 
+
+vertex_number: 4096
+biggest_deg: 3887 in 62 [ms]; 2_aprox: 4078 in 62 [ms]; better_2_aprox: 3872 in 62 [ms]; 
+
+vertex_number: 8192
+biggest_deg: 7957 in 344 [ms]; 2_aprox: 8168 in 359 [ms]; better_2_aprox: 8018 in 344 [ms]; 
+
+vertex_number: 16384
+biggest_deg: 16293 in 2000 [ms]; 2_aprox: 16360 in 1829 [ms]; better_2_aprox: 15968 in 1781 [ms]; 
+
+vertex_number: 32768
+biggest_deg: 32681 in 12333 [ms]; 2_aprox: 32744 in 13063 [ms]; better_2_aprox: 32544 in 9003 [ms]; 
+
+
+edge_prob: 0.05
+vertex_number: 32
+biggest_deg: 5 in 0 [ms]; 2_aprox: 20 in 0 [ms]; better_2_aprox: 8 in 0 [ms]; 
+
+vertex_number: 64
+biggest_deg: 19 in 0 [ms]; 2_aprox: 48 in 0 [ms]; better_2_aprox: 26 in 0 [ms]; 
+
+vertex_number: 128
+biggest_deg: 60 in 0 [ms]; 2_aprox: 118 in 0 [ms]; better_2_aprox: 78 in 0 [ms]; 
+
+vertex_number: 256
+biggest_deg: 160 in 0 [ms]; 2_aprox: 244 in 0 [ms]; better_2_aprox: 188 in 0 [ms]; 
+
+vertex_number: 512
+biggest_deg: 450 in 0 [ms]; 2_aprox: 500 in 0 [ms]; better_2_aprox: 404 in 0 [ms]; 
+
+vertex_number: 1024
+biggest_deg: 904 in 0 [ms]; 2_aprox: 1006 in 16 [ms]; better_2_aprox: 930 in 0 [ms]; 
+
+vertex_number: 2048
+biggest_deg: 1974 in 15 [ms]; 2_aprox: 2034 in 31 [ms]; better_2_aprox: 1900 in 15 [ms]; 
+
+vertex_number: 4096
+biggest_deg: 4000 in 110 [ms]; 2_aprox: 4082 in 125 [ms]; better_2_aprox: 3938 in 125 [ms]; 
+
+vertex_number: 8192
+biggest_deg: 8119 in 594 [ms]; 2_aprox: 8180 in 625 [ms]; better_2_aprox: 8078 in 626 [ms]; 
+
+vertex_number: 16384
+biggest_deg: 16266 in 2986 [ms]; 2_aprox: 16374 in 3328 [ms]; better_2_aprox: 16244 in 3282 [ms]; 
+
+vertex_number: 32768
+biggest_deg: 32694 in 16377 [ms]; 2_aprox: 32758 in 17373 [ms]; better_2_aprox: 32642 in 17826 [ms]; 
+
+
+edge_prob: 0.07
+vertex_number: 32
+biggest_deg: 6 in 0 [ms]; 2_aprox: 22 in 0 [ms]; better_2_aprox: 8 in 0 [ms]; 
+
+vertex_number: 64
+biggest_deg: 35 in 0 [ms]; 2_aprox: 54 in 0 [ms]; better_2_aprox: 26 in 0 [ms]; 
+
+vertex_number: 128
+biggest_deg: 78 in 0 [ms]; 2_aprox: 116 in 0 [ms]; better_2_aprox: 88 in 0 [ms]; 
+
+vertex_number: 256
+biggest_deg: 161 in 0 [ms]; 2_aprox: 246 in 0 [ms]; better_2_aprox: 194 in 0 [ms]; 
+
+vertex_number: 512
+biggest_deg: 420 in 0 [ms]; 2_aprox: 504 in 0 [ms]; better_2_aprox: 450 in 0 [ms]; 
+
+vertex_number: 1024
+biggest_deg: 977 in 0 [ms]; 2_aprox: 1014 in 0 [ms]; better_2_aprox: 968 in 16 [ms]; 
+
+vertex_number: 2048
+biggest_deg: 1981 in 31 [ms]; 2_aprox: 2036 in 31 [ms]; better_2_aprox: 1930 in 31 [ms]; 
+
+vertex_number: 4096
+biggest_deg: 3959 in 156 [ms]; 2_aprox: 4084 in 156 [ms]; better_2_aprox: 4018 in 172 [ms]; 
+
+vertex_number: 8192
+biggest_deg: 8136 in 844 [ms]; 2_aprox: 8180 in 922 [ms]; better_2_aprox: 8112 in 922 [ms]; 
+
+vertex_number: 16384
+biggest_deg: 16324 in 4307 [ms]; 2_aprox: 16368 in 5215 [ms]; better_2_aprox: 16238 in 4719 [ms]; 
+
+vertex_number: 32768
+biggest_deg: 32701 in 92917 [ms]; 2_aprox: 32758 in 41494 [ms]; better_2_aprox: 32680 in 33528 [ms]; 
+
+
+edge_prob: 0.09
+vertex_number: 32
+biggest_deg: 6 in 0 [ms]; 2_aprox: 24 in 0 [ms]; better_2_aprox: 8 in 0 [ms]; 
+
+vertex_number: 64
+biggest_deg: 41 in 0 [ms]; 2_aprox: 58 in 0 [ms]; better_2_aprox: 46 in 0 [ms]; 
+
+vertex_number: 128
+biggest_deg: 87 in 0 [ms]; 2_aprox: 120 in 1 [ms]; better_2_aprox: 64 in 0 [ms]; 
+
+vertex_number: 256
+biggest_deg: 203 in 1 [ms]; 2_aprox: 246 in 0 [ms]; better_2_aprox: 216 in 1 [ms]; 
+
+vertex_number: 512
+biggest_deg: 466 in 3 [ms]; 2_aprox: 506 in 2 [ms]; better_2_aprox: 456 in 0 [ms]; 
+
+vertex_number: 1024
+biggest_deg: 979 in 0 [ms]; 2_aprox: 1016 in 15 [ms]; better_2_aprox: 972 in 0 [ms]; 
+
+vertex_number: 2048
+biggest_deg: 2010 in 47 [ms]; 2_aprox: 2040 in 47 [ms]; better_2_aprox: 1952 in 47 [ms]; 
+
+vertex_number: 4096
+biggest_deg: 4065 in 231 [ms]; 2_aprox: 4090 in 203 [ms]; better_2_aprox: 4018 in 235 [ms]; 
+
+vertex_number: 8192
+biggest_deg: 8167 in 1109 [ms]; 2_aprox: 8182 in 1172 [ms]; better_2_aprox: 8134 in 1141 [ms]; 
+
+vertex_number: 16384
+biggest_deg: 16359 in 6064 [ms]; 2_aprox: 16378 in 7467 [ms]; better_2_aprox: 16330 in 6817 [ms]; 
+
+vertex_number: 32768
+biggest_deg: 32731 in 169560 [ms]; 2_aprox: 32758 in 773643 [ms]; better_2_aprox: 32700 in 661300 [ms]; 
+
+
